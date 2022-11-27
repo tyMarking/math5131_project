@@ -25,14 +25,14 @@ def main():
     states = odeint(farinella_cordelli, state0, t)
     print(states)
 
-    states[:,0] = states[:,0]/1.4e4
-    states[:,1] = states[:,1]/5e8
-    plt.plot(states[:,0],states[:,1])
-    plt.xlabel(SpeciesN)
-    plt.ylabel(Speciesn)
-    plt.title(f'{Speciesn} vs. {SpeciesN} (Time Suppressed)')
-    plt.grid(True, linewidth=0.5)
-    plt.show()
+    # states[:,0] = states[:,0]/1.4e4
+    # states[:,1] = states[:,1]/5e8
+    # plt.plot(states[:,0],states[:,1])
+    # plt.xlabel(SpeciesN)
+    # plt.ylabel(Speciesn)
+    # plt.title(f'{Speciesn} vs. {SpeciesN} (Time Suppressed)')
+    # plt.grid(True, linewidth=0.5)
+    # plt.show()
     
     plt.plot(states[:,0])
     plt.plot(states[:,1])
